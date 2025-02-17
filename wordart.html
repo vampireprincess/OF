@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <style>
+        /* Reset body and html margins and paddings */
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden; /* Prevent scrolling */
+      
+        }
+
+        /* Body styling for the gradient background and image */
+       
+
+        /* Image container for centered background image */
+body {
+    background: 
+    linear-gradient(135deg, #ee62d7, #fae1f2, #af3c80), /* Gradient layer */
+    url('https://i.postimg.cc/rpk8PD2N/11.jpg'); /* Image layer */
+    background-repeat: repeat; /* Repeat image */
+    background-size: auto; /* Keep original image size */
+    background-blend-mode: multiply; /* Apply multiply effect */
+}
+
+
+        /* Full-screen iframe container */
+        .iframe-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column; /* Stack elements vertically */
+            z-index: 1; /* Keep the iframe above other elements except the title */
+        }
+
+        /* Full-screen iframe styling */
+        .iframe-container iframe {
+            width: 100%;
+            height: 100%; /* Ensure the iframe takes the full height */
+            border: none; /* Remove iframe border */
+        }
+
+        /* Overlay title styling */
+        .overlay-title {
+            position: absolute;
+            top: 10px; /* Position the title near the top */
+            width: 100%;
+            text-align: center;
+            color: white;
+            font-size: 3em;
+            font-weight: bold;
+            font-family: 'Poppins', sans-serif; /* Modern font */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow for better readability */
+            z-index: 2; /* Ensure the title is above the iframe */
+        }
+
+        /* Link container for the background link */
+        .background-link-container {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            z-index: 2; /* Ensure the link is above the background but below the iframe */
+        }
+
+        /* Styling for the link */
+        .background-link-container a {
+            color: white;
+            text-decoration: none;
+            font-size: 1em;
+            font-weight: bold;
+            font-family: 'Arial', sans-serif;
+            background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background for readability */
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        /* Hover effect for the link */
+        .background-link-container a:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Background image container -->
+    <div class="background-image"></div>
+
+
+    <!-- Full-screen iframe -->
+    <div class="iframe-container">
+<iframe style="width:100%; height: 100%; border: none" src="https://cdn.wordart.com/iframe/o1m3bhhhhs2p"></iframe>
+    </div>
+
+</body>
+</html>
+
